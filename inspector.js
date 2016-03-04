@@ -65,7 +65,7 @@
 			cssId = ( el.id ) ? ( '#' + el.id ) : false;
 			
 			// Get node's CSS classes, replacing spaces with '.':
-			cssClass = ( el.className ) ? ( '.' + el.className.replace(/\s+/g,".") ) : '';
+			cssClass = ( el.getAttribute('class') ) ? ( '.' + el.getAttribute('class').replace(/\s+/g,".") ) : '';
 
 			// Build a unique identifier for this parent node:
 			if ( cssId ) {
